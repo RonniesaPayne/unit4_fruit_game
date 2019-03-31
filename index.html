@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, intital-scale=1">
     <link rel="icon" href="assets/images/strawberry.png" type="image/png" sizes="18x18">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
@@ -11,13 +11,37 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-      <div class="row"></div>
-
-
-
+  <div class="container-fluid">
+    <div id="header">
+      <h1>Milkshake MADNESS!!</h1>
     </div>
+  </div>
 
+  <div class="container-fluid">
+    <div class="instructions">
+      <h3 class=subtitle>HOW TO PLAY:</h3>
+      <br>
+      <ol class="numberedList" type="1">
+        <li>A random number is given at the start of the game, <br>in the <span>"Match This Number"</span> box.</li>
+        <li>There are four different types of fruit below:</li>
+          <ul class="fruitList">
+            <li style="color:red">Strawberries</li>
+            <li style="color:#3520be">Blueberries</li>
+            <li style="color:magenta">Rasberries</li>
+            <li style="color:yellow">Bananas</li>
+          </ul>
+        <li>Click on the fruit below to add points to your score.</li>
+        <li>If your score matches the random number, you win!  If you go over it, you lose.</li>
+    </div>
+  </div>
+
+<div class="fruitImages">
+  <img src="assets/images/strawberries.jpeg" style="width:175px;height:175px">
+
+
+
+</div>
+  
 
 
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
