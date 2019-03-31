@@ -1,7 +1,54 @@
+@-ms-viewport{
+    width: device-width;
+  }
 /* Background image */
 body {
-    background-image: url("../images/background.png");
+    background-image: url("../images/background4.png");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+}
+
+img.body {
+    opacity: 0.5;
+}
+
+@font-face {
+    src: url("../font/LemonCake.otf");
+    font-family: lemonCake;
+}
+
+#header {
+    font-family: lemonCake;
+    font-size: 65px;
+    font-weight: normal;
+    padding-left: 50px;
+    padding-top: 25px;
+    color: #2604a3;
+    text-shadow: 2px 2px 2px black;
+}
+
+.subtitle {
+    padding-top: 5px;
+    font-family: lemonCake;
+    font-size: 45px;
+    font-weight: bold;
+    padding-left: 50px;
+    color: #240a83;
+}
+
+.numberedList {
+    font-family: lemonCake;
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 65px;
+    color: #240a83;
+    list-style-type: decimal;
+    
+}
+.fruitList {
+    text-indent: 10%;
+    text-shadow: 2px 2px 16px black;
+    font-size: 27px; 
+    font-weight: lighter;
 }
