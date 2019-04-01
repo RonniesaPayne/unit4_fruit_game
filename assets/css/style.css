@@ -48,7 +48,21 @@ img.body {
 }
 .fruitList {
     text-indent: 10%;
-    text-shadow: 2px 2px 16px black;
+    text-shadow: 2px 2px 2px black;
     font-size: 27px; 
-    font-weight: lighter;
+    /*font-weight: lighter;*/
+}
+
+.fruitImages {
+    padding-top: 175px;
+    padding-left: 80px;
+    padding-right: 25px;
+}
+
+.images {
+    box-shadow: 10px 10px 8px black;
+    border-radius: 48px;
+    padding:4px;
+    border:2px solid #040400;
+    background-color:rgb(24, 134, 61);
 }
