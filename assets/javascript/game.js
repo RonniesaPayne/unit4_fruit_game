@@ -13,7 +13,21 @@ var newGame = function () {
     goal = Math.floor(Math.random() * 102 + 19);
     console.log (goal);
 
-$("#randomNumber").text(goal);
+//displays random number
+$("#randomNumber").text("Number to Match:  " + goal);
+}
+
+//assigns the value to the fruit buttons
+//strawberries = imageValue();
+//blueberries = imageValue();
+//bananas = imageValue();
+//raspberries = imageValue();
+
+function strawberries () {
+    Math.floor(math.random() * 12 + 1);
+$()    
+}
+
 }
 
 
@@ -21,6 +35,7 @@ $("#randomNumber").text(goal);
 
 
 
+newGame ();
 
 
 });
