@@ -1,6 +1,6 @@
 $(document).ready(function() {
 var goal; 
-var score;
+var score = 0;
 var strawberries;
 var blueberries;
 var bananas;
@@ -17,19 +17,26 @@ var newGame = function () {
 $("#randomNumber").text("Number to Match:  " + goal);
 }
 
-//assigns the value to the fruit buttons
-//strawberries = imageValue();
-//blueberries = imageValue();
-//bananas = imageValue();
-//raspberries = imageValue();
+//fruit images/buttons
+var strawBerryImage = $("<img>");
+strawBerryImage.addClass("images");
+strawBerryImage.attr("src", "assets/images/strawberries.jpeg");
+$("#images").append(strawBerryImage);
 
-function strawberries () {
-    Math.floor(math.random() * 12 + 1);
-$()    
-}
+var blueBerryImage = $("<img>");
+blueBerryImage.addClass("images");
+blueBerryImage.attr("src", "assets/images/blueberries.jpeg");
+$("#images").append(blueBerryImage);
 
-}
+var raspBerryImage = $("<img>");
+raspBerryImage.addClass("images");
+raspBerryImage.attr("src", "assets/images/raspberries.jpeg");
+$("#images").append(raspBerryImage);
 
+var bananaImage = $("<img>");
+bananaImage.addClass("images");
+bananaImage.attr("src", "assets/images/bananas.jpeg");
+$("#images").append(bananaImage);
 
 
 

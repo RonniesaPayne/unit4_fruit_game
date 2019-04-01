@@ -60,6 +60,9 @@ img.body {
 }
 
 .images {
+    width:200px;
+    height:200px;
+    margin:0px 20px;
     box-shadow: 10px 10px 8px black;
     border-radius: 48px;
     padding:4px;
