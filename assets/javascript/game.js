@@ -67,6 +67,17 @@ $("#yellow").on("click", function(){
     console.log(score)
 })
 
+var currentScore =  function () {
+    if (score === goal) {
+        console.log ("You Made a Milkshake!")//still not there...score keeps going???
+    }
+
+    else if (score > goal){
+        console.log ("You Spilled the Milk!  No milkshake for you!!")//this thing is like the Energizer Bunny...it just keeps going and going and going....
+    }
+
+}
+
 //displays the user's score...and after testing, I realize it doesn't work.  Needs something else...
 $("#yourScore").text("Your Score:  " + score);
 
