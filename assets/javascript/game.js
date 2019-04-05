@@ -40,17 +40,24 @@ $("#images").append(bananaImage);
 
 //assigns random numbers to the fruit buttons
 strawberries = Math.floor(Math.random () * 12) + 1;
-console.log (strawberries);
+    console.log (strawberries);
+    
 $("#red").on("click", function(){
     score += strawberries;
-    console.log(score)
+    console.log(score);
+    currentScore();
+    $("#yourScore").text("Your Score:  " + score);
+
 })
+
 
 blueberries = Math.floor(Math.random () * 12) + 1;
 console.log (blueberries);
 $("#blue").on("click", function(){
     score += blueberries;
-    console.log(score)
+    console.log(score);
+    currentScore();
+    $("#yourScore").text("Your Score:  " + score);
 })
 
 raspberries = Math.floor(Math.random() * 12) +1;
@@ -58,6 +65,8 @@ console.log (raspberries);
 $("#magenta").on("click", function(){
     score += raspberries;
     console.log(score)
+    currentScore();
+    $("#yourScore").text("Your Score:  " + score);
 })
 
 bananas = Math.floor(Math.random () * 12) + 1;
@@ -65,10 +74,22 @@ console.log (bananas);
 $("#yellow").on("click", function(){
     score += bananas;
     console.log(score)
+    currentScore();
+    $("#yourScore").text("Your Score:  " + score);
 })
 
-//displays the user's score...and after testing, I realize it doesn't work.  Needs something else...
-$("#yourScore").text("Your Score:  " + score);
+var currentScore =  function () {
+    if (score === goal) {
+        console.log ("You Made a Milkshake!")//still not there...score keeps going???
+    }
+
+    else if (score > goal){
+        console.log ("You Spilled the Milk!  No milkshake for you!!")//this thing is like the Energizer Bunny...it just keeps going and going and going....
+    }
+
+}
+
+
 
 
 
