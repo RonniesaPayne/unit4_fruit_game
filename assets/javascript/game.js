@@ -40,32 +40,35 @@ $("#images").append(bananaImage);
 
 //assigns random numbers to the fruit buttons
 strawberries = Math.floor(Math.random () * 12) + 1;
-//console.log (strawberries);
+console.log (strawberries);
 $("#red").on("click", function(){
     score += strawberries;
     console.log(score)
 })
 
 blueberries = Math.floor(Math.random () * 12) + 1;
-//console.log (blueberries);
+console.log (blueberries);
 $("#blue").on("click", function(){
     score += blueberries;
     console.log(score)
 })
 
 raspberries = Math.floor(Math.random() * 12) +1;
-//console.log (raspberries);
+console.log (raspberries);
 $("#magenta").on("click", function(){
     score += raspberries;
     console.log(score)
 })
 
 bananas = Math.floor(Math.random () * 12) + 1;
-//console.log (bananas);
+console.log (bananas);
 $("#yellow").on("click", function(){
     score += bananas;
     console.log(score)
 })
+
+//displays the user's score...and after testing, I realize it doesn't work.  Needs something else...
+$("#yourScore").text("Your Score:  " + score);
 
 
 
