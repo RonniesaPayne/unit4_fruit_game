@@ -13,6 +13,7 @@ var losses = 0;
 var newGame = function () {
     goal = Math.floor(Math.random() * 102)+ 19;
     console.log (goal);
+    
 
 //displays random number
 $("#randomNumber").text("Number to Match:  " + goal);
@@ -48,7 +49,7 @@ strawberries = Math.floor(Math.random () * 12) + 1;
 $("#red").on("click", function(){
     score += strawberries;
     console.log(score);
-    //currentScore;
+    currentScore();
     $("#yourScore").text("Your Score:  " + score);
 });
 
@@ -57,7 +58,7 @@ console.log (blueberries);
 $("#blue").on("click", function(){
     score += blueberries;
     console.log(score);
-   //currentScore;
+    currentScore();
     $("#yourScore").text("Your Score:  " + score);
 });
 
@@ -66,7 +67,7 @@ console.log (raspberries);
 $("#magenta").on("click", function(){
     score += raspberries;
     console.log(score)
-    //currentScore;
+    currentScore();
     $("#yourScore").text("Your Score:  " + score);
 });
 
@@ -75,11 +76,11 @@ console.log (bananas);
 $("#yellow").on("click", function(){
     score += bananas;
     console.log(score)
-    //currentScore;
+    currentScore();
     $("#yourScore").text("Your Score:  " + score);
-
-
-if (score === goal) {
+})
+var currentScore = function(){
+    if (score === goal) {
         console.log ("You Made a Milkshake!")
         wins++
         console.log(wins)
@@ -90,10 +91,11 @@ if (score === goal) {
         console.log(losses)
         newGame();
     }
+}
     $("#wins").text("Wins: " + wins);
     $("#losses").text("Losses: " + losses);
 
-});
+
 
 
 
